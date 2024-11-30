@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="主页"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/friends"
+        android:title="朋友"
+        android:icon="@drawable/baseline_people_24"/>
+
+    <item android:id="@+id/lottery"
+        android:title="抽奖"
+        android:icon="@drawable/baseline_currency_yen_24"/>
+
+    <item android:id="@+id/person"
+        android:title="个人"
+        android:icon="@drawable/person"/>
+</menu>

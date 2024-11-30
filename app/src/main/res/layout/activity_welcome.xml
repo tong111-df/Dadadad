@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/zhaozu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ac.welcomeActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="#80000000">
+
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="3s"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

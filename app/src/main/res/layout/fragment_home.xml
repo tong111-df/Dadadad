@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.homeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        app:title="主页"
+        app:titleTextColor="@color/black"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_weather"
+            android:background="@drawable/weather"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:background="@drawable/time"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="天气查询"
+            />
+        <TextView
+            android:paddingLeft="125dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间查询"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_family"
+            android:background="@drawable/family"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/tv_age"
+            android:background="@drawable/age"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="亲戚计算器"
+            />
+        <TextView
+            android:paddingLeft="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年龄计算器"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:background="@drawable/temperature"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/tv_sex"
+            android:background="@drawable/sex"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="温度计算器"
+            />
+        <TextView
+            android:paddingLeft="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="性取向猜测"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_bmi"
+            android:background="@drawable/bmi"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/tv_namename"
+            android:background="@drawable/namename"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI计算器"
+            />
+        <TextView
+            android:paddingLeft="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名猜测"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

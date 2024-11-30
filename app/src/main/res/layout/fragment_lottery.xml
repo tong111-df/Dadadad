@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.homeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        app:title="抽奖"
+        app:titleTextColor="@color/black"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <TextView
+
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="用户"/>
+        <TextView
+            android:textSize="25sp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/tv_lottery_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="100dp"
+            android:paddingLeft="96dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="大*" />
+        <TextView
+            android:id="@+id/da_cnt"
+            android:paddingTop="100dp"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="0" />
+
+        <TextView
+            android:paddingTop="100dp"
+            android:paddingLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="是*" />
+
+        <TextView
+            android:id="@+id/shi_cnt"
+            android:paddingTop="100dp"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="0" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+        android:paddingTop="50dp"
+        android:paddingLeft="145dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:text="最*" />
+        <TextView
+            android:id="@+id/zui_cnt"
+            android:paddingTop="50dp"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="0" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="50dp"
+            android:paddingLeft="96dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="棒*" />
+        <TextView
+            android:id="@+id/bang_cnt"
+            android:paddingTop="50dp"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="0" />
+
+
+        <TextView
+            android:paddingTop="50dp"
+            android:paddingLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="的*" />
+
+        <TextView
+            android:id="@+id/de_cnt"
+            android:paddingTop="50dp"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="0" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_choujiang"
+        android:text="点击抽奖"
+        android:textSize="30sp"
+         android:layout_marginTop="150dp"
+        android:layout_marginLeft="85dp"
+        android:layout_width="200dp"
+        android:layout_height="75dp"></Button>
+    <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:text="温馨提示，每次抽奖间隔不小于30分"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

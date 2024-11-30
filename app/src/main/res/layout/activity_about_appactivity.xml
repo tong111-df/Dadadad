@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundone"
+    android:orientation="vertical"
+    tools:context=".ac.aboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aboutAPP_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="关于APP"
+        android:background="@color/pink"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/da"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="    本APP是一款可以抽奖的记事本，抽到的奖品可以换取与本APP作者共进早餐的机会，下面列举其优点：\n
+\n      *要求不高，无需联网（没钱搞服务器，所以现在不能联网）\n
+     *页面简介，大方美观（大对开发前端的具体操作仍未掌握）\n
+     *主页丰富，功能较多（仅仅娱乐，不代表本人真实编程水平）\n
+     *抽奖公平，奖品丰厚（据统计，与大共进过早餐不足50人）\n
+     *操作便捷，打开即用（现在还没接到广告,欢迎大佬投资）\n
+     *埋藏彩蛋，引人入胜（拥有噱头，以推动大家勤加使用）\n
+
+\n\n\                   衷心对各位支持大的用户表示感谢
+
+
+"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

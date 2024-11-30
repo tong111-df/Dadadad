@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundone"
+    android:orientation="vertical"
+    tools:context=".ac.aboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="开发者日志"
+        android:background="@color/pink"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/da"/>
+    
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="
+* 2024.11.21完成Android studio环境配置，实现下一个伟大软件诞生的第一步\n
+* 2024.11.22完成登录基本界面设计，初步了解as的各个模块\n
+* 2024.11.23完成登录界面，账号密码用数据库存放\n
+* 2024.11.24完成底部导航，可以实现从底部导航进入不同功能页面，创建好友页面的左侧选择列表，准备在个人中心添加修改密码，软件说明，联系方式\n
+* 2024.11.25完成个人中心页面，新增加3s启动页面，完成抽奖的数据库的添加\n
+* 2024.11.26完成了抽奖的基本逻辑，尝试了一天的lottery数据库，但可以说毫无进展\n
+* 2024.11.27完成了抽奖界面，可以用数据库存储lottery数据，实现可持久化，同时设置了抽奖间隔\n
+* 2024.11.28完成了主页的基本构思，完成了主页的天气预报，创立了朋友界面的添加朋友，创建了朋友数据库\n
+* 2024.11.29完成了主页面的小程序添加，朋友界面可以展示朋友列表，同时可以实现点击详情以及修改功能\n
+"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

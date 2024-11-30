@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/backgroundone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ac.noticeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notice_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="系统通知"
+        android:background="@color/pink"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="当前暂无系统通知"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="66dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_notice"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

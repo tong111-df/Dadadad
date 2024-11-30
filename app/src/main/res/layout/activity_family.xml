@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundone"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ac.family">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/family_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="亲戚计算器"
+        android:background="@color/pink"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"/>
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:textSize="20dp"
+        android:text="欢迎来到大的亲戚计算器"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:background="@drawable/b_user_name"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/et_your_family"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:hint="请输入您要计算的亲戚"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Button
+            android:id="@+id/btn_query_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="点击计算"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ProgressBar
+        android:id="@+id/progressBar_family"
+        android:layout_marginLeft="165dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

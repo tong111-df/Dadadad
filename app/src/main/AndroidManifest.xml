@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/da"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/da"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+        tools:targetApi="31">
+        <activity
+            android:name=".ac.Easter_egg"
+            android:exported="false" />
+        <activity
+            android:name=".ac.friendsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ac.namename"
+            android:exported="false" />
+        <activity
+            android:name=".ac.bmi"
+            android:exported="false" />
+        <activity
+            android:name=".ac.sex"
+            android:exported="false" />
+        <activity
+            android:name=".ac.temperature"
+            android:exported="false" />
+        <activity
+            android:name=".ac.age"
+            android:exported="false" />
+        <activity
+            android:name=".ac.family"
+            android:exported="false" />
+        <activity
+            android:name=".ac.time"
+            android:exported="false" />
+        <activity
+            android:name=".ac.DataService"
+            android:exported="false" />
+        <activity
+            android:name=".ac.addFriends"
+            android:exported="false" />
+        <activity
+            android:name=".ac.weather"
+            android:exported="false" />
+        <activity
+            android:name=".ac.aboutAPPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.forgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.callActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.aboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.noticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.rewritePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ac.register"
+            android:exported="false" />
+        <activity
+            android:name=".ac.function"
+            android:exported="false" />
+        <activity
+            android:name=".ac.welcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

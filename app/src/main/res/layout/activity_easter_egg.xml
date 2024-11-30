@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ac.Easter_egg">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/easter_egg_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="恭喜您进入隐藏副本"
+        android:background="@color/pink"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@drawable/mainbackground"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="150dp"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:text="感谢您的细心使用\n没错，这就是彩蛋\n赶快截图发给大\n若您为第一名发现者\n大将请您一顿夜宵\n数量有限\n先到先得"
+            android:textSize="30sp"
+            android:layout_height="500dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
