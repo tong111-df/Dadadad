@@ -51,6 +51,21 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/b_user_name"
         />
+
+    <EditText
+        android:id="@+id/et_re_confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:hint="请再次确认密码"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/b_user_name"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

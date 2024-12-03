@@ -138,7 +138,7 @@ public class lotteryFragment extends Fragment {
                         // 可以在这里更新按钮的UI状态，比如启用或禁用按钮的视觉效果
                         // 但由于你是通过逻辑控制点击，所以这一步通常是可选的
                     }
-                }, 1800000);
+                }, 43200000);
 
                 /*int dada= seek.getDacnt();
                 int shishi=seek.getShicnt();

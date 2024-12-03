@@ -17,26 +17,35 @@
         android:background="@color/pink"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
         app:titleTextColor="@color/black"/>
-
     <TextView
         android:id="@+id/tv_notice"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="当前暂无系统通知"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="66dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_notice_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="如需投放广告，请点击此处"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:layout_marginTop="66dp"
         android:gravity="center"
         />
     <Button
-        android:id="@+id/myButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/tv_notice"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="20dp"
+    android:id="@+id/myButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click Me"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/tv_notice"
+    android:layout_marginLeft="125dp"
+    android:layout_marginTop="20dp"
         android:visibility="gone"
-        />
+    />
 </androidx.appcompat.widget.LinearLayoutCompat>

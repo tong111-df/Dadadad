@@ -76,7 +76,6 @@ public class namename extends AppCompatActivity {
     }
 
     private void showDialog(String lastname,String firstname) {
-
         new AlertDialog.Builder(namename.this)
                 .setTitle("计算成功")
                 .setMessage("您的姓名为" + lastname + firstname)

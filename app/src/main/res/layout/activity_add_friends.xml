@@ -55,6 +55,7 @@
         android:id="@+id/et_ad_friendsDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="请输入您对朋友的记录与评价"
         android:textSize="16sp"
         android:textColor="@color/black"
         android:padding="5dp"

@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="用户"/>
+        android:text="欢迎用户"/>
         <TextView
             android:textSize="25sp"
             android:layout_marginLeft="6dp"
@@ -36,12 +36,6 @@
             android:text="xxx"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
-
-
-
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -166,11 +160,11 @@
     android:layout_height="wrap_content">
     <TextView
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:text="温馨提示，每次抽奖间隔不小于30分"
+        android:text="温馨提示，每次抽奖间隔不小于12h"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

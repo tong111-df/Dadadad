@@ -1,8 +1,10 @@
 package com.example.test.ac;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -14,12 +16,14 @@ public class welcomeActivity extends AppCompatActivity {
 
     private TextView tvCountdown;
 
+    private TextView tv_advertisement;
     private CountDownTimer countDownTimer;
     private long timeLeftInMillis = 4000; // 设置倒计时时长，单位为毫秒
 
     public welcomeActivity() {
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +33,17 @@ public class welcomeActivity extends AppCompatActivity {
         tvCountdown=findViewById(R.id.tv_countdown);
 
         startCountdown();
+
+
+        tv_advertisement=findViewById(R.id.tv_advertisement);
+        findViewById(R.id.tv_advertisement).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(welcomeActivity.this, advertisement.class));
+                // 倒计时结束后的操作，例如跳转到主页面
+                finish();
+            }
+        });
 
     }
 

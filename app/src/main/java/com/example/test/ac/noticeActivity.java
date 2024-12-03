@@ -1,5 +1,6 @@
 package com.example.test.ac;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ import java.util.Locale;
 
 public class noticeActivity extends AppCompatActivity {
     private Button myButton;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +44,14 @@ public class noticeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent =null;
                 intent=new Intent(noticeActivity.this, Easter_egg.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.tv_notice_advertisement).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =null;
+                intent=new Intent(noticeActivity.this, advertisement2.class);
                 startActivity(intent);
             }
         });

@@ -53,7 +53,7 @@ public class function extends AppCompatActivity {
                 return true;
             }
         });
-        selectedFragment(0);
+        selectedFragment(1);
     }
 
     private void selectedFragment(int position){

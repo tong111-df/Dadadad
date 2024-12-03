@@ -53,11 +53,9 @@ public class friendsDetails extends AppCompatActivity {
                 String details=et_de_friendsDetails.getText().toString();
                 if((typeString.equals("0"))||(typeString.equals("1"))||(typeString.equals("2"))||(typeString.equals("3"))||(typeString.equals("4"))){
                     int type = Integer.parseInt(typeString);
-                    int row = FriendDbHelper.getInstance(friendsDetails.this).updateFriends(username, type, name, details);
-                    if (row > 1) {
-                        Toast.makeText(friendsDetails.this, "修改成功", Toast.LENGTH_SHORT).show();
+                    FriendDbHelper.getInstance(friendsDetails.this).updateFriends(username, type, name, details);
+                    Toast.makeText(friendsDetails.this, "修改成功", Toast.LENGTH_SHORT).show();
                         finish();
-                    }
                 }
                 else {
                     Toast.makeText(friendsDetails.this,"请在类别中输入具体数字",Toast.LENGTH_SHORT).show();
