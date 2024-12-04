@@ -46,9 +46,6 @@
             android:name=".ac.time"
             android:exported="false" />
         <activity
-            android:name=".ac.DataService"
-            android:exported="false" />
-        <activity
             android:name=".ac.addFriends"
             android:exported="false" />
         <activity
