@@ -76,21 +76,78 @@ public class namename extends AppCompatActivity {
     }
 
     private void showDialog(String lastname,String firstname) {
-        new AlertDialog.Builder(namename.this)
-                .setTitle("计算成功")
-                .setMessage("您的姓名为" + lastname + firstname)
-                .setNegativeButton("感谢大", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+        if (lastname.equals("李") && firstname.equals("梓萌")) {
+            new AlertDialog.Builder(namename.this)
+                    .setTitle("计算成功")
+                    .setMessage("您是美女" + lastname + firstname)
+                    .setNegativeButton("感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
-                    }
-                })
-                .setPositiveButton("非常感谢大", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    })
+                    .setPositiveButton("非常感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
-                    }
-                })
-                .show();
+                        }
+                    })
+                    .show();
+        }  else if (lastname.equals("佟") && firstname.equals("权健")) {
+            new AlertDialog.Builder(namename.this)
+                    .setTitle("计算成功")
+                    .setMessage("您是尊贵的的大")
+                    .setNegativeButton("感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .setPositiveButton("非常感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .show();
+        }else if (lastname.equals("吴") && firstname.equals("仕博")) {
+            new AlertDialog.Builder(namename.this)
+                    .setTitle("计算成功")
+                    .setMessage("您应该是帅气的" + lastname + firstname)
+                    .setNegativeButton("感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .setPositiveButton("非常感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .show();
+        } else{
+            new AlertDialog.Builder(namename.this)
+                    .setTitle("计算成功")
+                    .setMessage("您的姓名为" + lastname + firstname)
+                    .setNegativeButton("感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .setPositiveButton("非常感谢大", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .show();
+        }
     }
+
 }
+
+
+

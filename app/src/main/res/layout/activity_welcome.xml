@@ -32,8 +32,8 @@
         android:id="@+id/tv_advertisement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:text="\n\n\n\n\n\n\n\n\n    您也希望投放广告？\n          请点击屏幕"
+        android:textColor="@color/blue"
+        android:text="\n\n\n\n\n\n       收钱就办事\n 这才是重点↓↓↓\n\n\n\n\n    您也希望投放广告？\n          请点击屏幕"
         android:textSize="40dp" />
 
 </RelativeLayout>
