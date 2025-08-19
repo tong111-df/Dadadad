@@ -12,14 +12,28 @@ import com.example.test.R;
 import com.example.test.entity.FriendsInfo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class rightListAdapter extends RecyclerView.Adapter<rightListAdapter.MyHolder>  {
-    private List<FriendsInfo> mFriendsInfo =new ArrayList<>();
+    private List<FriendsInfo> mFriendsInfo = new ArrayList<>();
+    private Random random = new Random();
 
-    public void setListData(List<FriendsInfo> list){
-        this.mFriendsInfo=list;
+    public void setListData(List<FriendsInfo> list) {
+        // 创建列表副本以避免修改原始数据
+        this.mFriendsInfo = new ArrayList<>(list);
+        // 随机打乱列表顺序
+        Collections.shuffle(this.mFriendsInfo, random);
         notifyDataSetChanged();
+    }
+
+    // 添加一个新方法来随机打乱现有数据
+    public void shuffleData() {
+        if (!mFriendsInfo.isEmpty()) {
+            Collections.shuffle(mFriendsInfo, random);
+            notifyDataSetChanged();
+        }
     }
 
     @NonNull
@@ -38,12 +52,14 @@ public class rightListAdapter extends RecyclerView.Adapter<rightListAdapter.MyHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(null!=monItemClickListener){
-                    monItemClickListener.onItemClick(friendsInfo,position);
+                if (monItemClickListener != null) {
+                    int currentPos = holder.getAdapterPosition();
+                    if (currentPos != RecyclerView.NO_POSITION) {
+                        monItemClickListener.onItemClick(friendsInfo, currentPos);
+                    }
                 }
             }
         });
-
     }
 
     @Override
@@ -51,20 +67,16 @@ public class rightListAdapter extends RecyclerView.Adapter<rightListAdapter.MyHo
         return mFriendsInfo.size();
     }
 
-    static class MyHolder extends RecyclerView.ViewHolder{
-
+    static class MyHolder extends RecyclerView.ViewHolder {
         TextView friends_name;
         TextView friends_details;
 
-
         public MyHolder(@NonNull View itemView) {
             super(itemView);
-            friends_name=itemView.findViewById(R.id.friends_name);
-            friends_details=itemView.findViewById(R.id.friends_details);
-
+            friends_name = itemView.findViewById(R.id.friends_name);
+            friends_details = itemView.findViewById(R.id.friends_details);
         }
     }
-
 
     private onItemClickListener monItemClickListener;
 
@@ -72,7 +84,7 @@ public class rightListAdapter extends RecyclerView.Adapter<rightListAdapter.MyHo
         this.monItemClickListener = monItemClickListener;
     }
 
-    public interface onItemClickListener{
-        void onItemClick(FriendsInfo friendsInfo,int position);
+    public interface onItemClickListener {
+        void onItemClick(FriendsInfo friendsInfo, int position);
     }
 }

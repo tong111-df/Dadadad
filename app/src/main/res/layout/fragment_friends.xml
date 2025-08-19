@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pink"
-        app:title="朋友"
+        app:title="笔记"
         app:titleTextColor="@color/black"/>
     <TextView
-        android:text="                                      添加新的朋友"
+        android:text="                                      添加新的内容"
         android:background="#f5f5f5"
         android:id="@+id/jiahao"
         android:paddingTop="5dp"

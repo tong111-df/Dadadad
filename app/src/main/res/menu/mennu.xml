@@ -5,7 +5,7 @@
         android:icon="@drawable/baseline_home_24"/>
 
     <item android:id="@+id/friends"
-        android:title="朋友"
+        android:title="笔记"
         android:icon="@drawable/baseline_people_24"/>
 
     <item android:id="@+id/lottery"

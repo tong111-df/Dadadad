@@ -95,7 +95,7 @@ public class lotteryFragment extends Fragment {
                 if(dada!=0&&shishi!=0&&zuizui!=0&&bangbang!=0&&dede!=0){
                     new AlertDialog.Builder(getContext())
                             .setTitle("恭喜！！！")
-                            .setMessage("恭喜您获得与大共进早餐的机会，当前即将清空，记得截屏哦 >_< <_>")
+                            .setMessage("恭喜您获得休息的机会 >_< <_>")
                             .setNegativeButton("确定", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {

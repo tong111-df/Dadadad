@@ -12,7 +12,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/addfriends_back"
-        app:title="添加好友"
+        app:title="添加内容"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
@@ -26,7 +26,7 @@
             android:layout_height="50dp"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:hint="请输入姓名"
+            android:hint="请输入标题"
             android:maxLines="1"
             android:padding="5dp"
             android:layout_marginTop="10dp" />
@@ -37,7 +37,7 @@
             android:layout_height="50dp"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:hint="请输入好友类型"
+            android:hint="请输入内容类型"
             android:maxLines="1"
             android:padding="5dp"
             android:layout_marginTop="10dp" />
@@ -46,7 +46,7 @@
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:textSize="6dp"
-            android:text="0自己，1特别关心，2家人，3同学，4同事"/>
+            android:text="0数据结构，1计组，2操作系统，3计网，4数学"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -55,7 +55,7 @@
         android:id="@+id/et_ad_friendsDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入您对朋友的记录与评价"
+        android:hint="请输入内容详情"
         android:textSize="16sp"
         android:textColor="@color/black"
         android:padding="5dp"

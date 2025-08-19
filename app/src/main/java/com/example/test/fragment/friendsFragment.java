@@ -58,11 +58,11 @@ public class friendsFragment extends Fragment {
     }
     public void onActivityCreated(@Nullable Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        leftDataList.add("自己");
-        leftDataList.add("特别关心");
-        leftDataList.add("家人");
-        leftDataList.add("同学");
-        leftDataList.add("同事");
+        leftDataList.add("数据结构");
+        leftDataList.add("计组");
+        leftDataList.add("操作系统");
+        leftDataList.add("计网");
+        leftDataList.add("数学");
         mleftListAdapter=new leftListAdapter(leftDataList);
         leftRecyclerView.setAdapter(mleftListAdapter);
 
